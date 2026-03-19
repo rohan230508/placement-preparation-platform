@@ -1,0 +1,9 @@
+node_modules/
+*.db
+.env
+backend/node_modules/
+error.log
+error.txt
+check.js
+test.js
+fix.js
