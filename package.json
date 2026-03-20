@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node backend/server.js",
     "dev": "node backend/server.js",
-    "install-deps": "cd backend && npm install"
+    "postinstall": "cd backend && npm install"
   },
   "keywords": ["placement", "preparation", "aptitude", "coding", "interview"],
   "author": "PlacePrep",
