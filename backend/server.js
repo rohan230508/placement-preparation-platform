@@ -322,7 +322,7 @@ Respond ONLY with a valid JSON array. Each object must have:
 - "explanation" (string)
 No markdown, no code blocks, only raw JSON array.`;
 
-        const response = await genAI.models.generateContent({ model: 'gemini-1.5-flash', contents: prompt });
+        const response = await genAI.models.generateContent({ model: 'gemini-2.5-flash', contents: prompt });
         let text = response.text.trim();
         if (text.startsWith('\`\`\`json')) text = text.slice(7, text.lastIndexOf('\`\`\`')).trim();
         else if (text.startsWith('\`\`\`')) text = text.slice(3, text.lastIndexOf('\`\`\`')).trim();
